@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>考拉拉专车</title>
+    <link rel="stylesheet" href="./styles.css?v=20260322.1025" />
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <div id="order-modal" class="modal hidden" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal="true"></div>
+      <div class="modal-panel">
+        <div class="modal-header">
+          <h3>确认下单</h3>
+          <button id="close-modal-btn" class="icon-btn" type="button">&times;</button>
+        </div>
+        <form id="order-form" class="order-form"></form>
+      </div>
+    </div>
+
+    <div id="task-detail-modal" class="modal hidden" aria-hidden="true">
+      <div class="modal-backdrop" data-close-task-modal="true"></div>
+      <div class="modal-panel">
+        <div class="modal-header">
+          <h3>任务详情</h3>
+          <button id="close-task-modal-btn" class="icon-btn" type="button">&times;</button>
+        </div>
+        <div id="task-detail-content" class="order-form"></div>
+      </div>
+    </div>
+
+    <div id="account-detail-modal" class="modal hidden" aria-hidden="true">
+      <div class="modal-backdrop" data-close-account-modal="true"></div>
+      <div class="modal-panel">
+        <div class="modal-header">
+          <h3>账号详情</h3>
+          <button id="close-account-modal-btn" class="icon-btn" type="button">&times;</button>
+        </div>
+        <div id="account-detail-content" class="order-form"></div>
+      </div>
+    </div>
+
+    <script>
+      window.KOALALA_API_BASE = "https://koalala-api.dreamu20718.workers.dev";
+    </script>
+    <script src="./app.js?v=20260322.1040"></script>
+  </body>
+  </html>
+
